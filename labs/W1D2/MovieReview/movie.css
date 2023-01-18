@@ -1,0 +1,71 @@
+    body {
+        background-image: url("background.png");
+        font-size: 8pt;
+        font-family: Verdana, Tahoma, sans-serif;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #image-banner-div {
+        background-image: url("bannerbg.png");
+    }
+    
+    #image-banner {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 24pt;
+        font-weight: bold;
+        font-family: Verdana, Tahoma, sans-serif;
+        text-shadow: 3px 3px;
+        color: #999999;
+    }
+    
+    #overall-content-area-div {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        border-width: 4px;
+        border-color: gray;
+        border-style: solid;
+        border-radius: 20px;
+        display: grid;
+        grid-template-areas: 'rating-critics-review-area columns-ofreviews-area';
+    }
+    
+    #rating-critics-review-div {
+        position: relative;
+        grid-area: 'rating-critics-review-area';
+        width: 550px;
+        padding: 0px;
+        /* float: left; */
+        /* overflow: hidden; */
+    }
+    
+    #columns-ofreviews-div {
+        position: relative;
+        width: 250px;
+        border-top-left-radius: 20px;
+        grid-area: 'columns-ofreviews-area';
+        /* float: right; */
+        /* overflow: hidden; */
+    }
+    
+    #rotten-div {
+        background-image: url("rbg.png");
+        font-size: 48pt;
+        font-weight: bold;
+        color: red;
+        border-top-left-radius: 20px;
+    }
+    
+    .review-paragraph {
+        background-color: #E8DC9B;
+        border-color: gray;
+        border-width: thick;
+        border-radius: 10px;
+    }
