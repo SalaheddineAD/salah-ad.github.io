@@ -21,6 +21,7 @@
         
         #content {
             display: flex;
+            flex-wrap: wrap;
         }
         
         #column1 {
@@ -64,7 +65,7 @@
                 width: 50%;
             }
             #content {
-                flex-direction: column;
+                flex-direction: row;
                 display: flex;
                 flex-wrap: wrap;
             }
