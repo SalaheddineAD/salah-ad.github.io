@@ -1,0 +1,38 @@
+label{
+    display:flex;
+    flex-direction:column;
+    width:300px;
+    /* margin:10px; */
+    /* padding:10px; */
+
+}
+.label_checkbox{
+    display:flex;
+    flex-direction:row;
+    /* width:300px; */
+    margin-top:10px;
+    /* padding:10px; */
+}
+#submit_button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:rgb(24, 103, 192);
+    color:white;
+    width: 70px;
+    height: 35px;;
+    border-radius: 5px;
+    border:0px;
+}
+input{
+    margin-top: 8px;
+    margin-bottom: 1px;
+}
+form{
+    /* display:flex;
+    flex-direction:column; */
+    /* width:300px; */
+    margin:30px;
+    padding:20px;
+}
+body{
+}

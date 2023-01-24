@@ -46,7 +46,6 @@ function startAnimation() {
     
     timer = setInterval(function() {
         document.getElementById("text-area").value = frames[i];
-        console.log(frames[i]);
         i++;
         if (i === frames.length) {
             i = 0;
@@ -57,3 +56,35 @@ function startAnimation() {
     document.getElementById("animation").disabled = true;
 }
  
+//functional programming part
+// var assert = chai.assert;
+//sum**************************************************
+
+function sum(array){
+    return array.reduce((sum_var,element)=>element+sum_var);
+}
+// console.log(assert.equal(sum([1,2,3,4,5,6]),21));
+console.log(sum([1,2,3,4,5,6]));
+
+//multiply **************************************************
+
+function multiply(array){
+    return array.reduce((sum_var,element)=>element*sum_var);
+}
+// console.log(assert.equal(multiply([1,2,3,4,5,6]),720));
+console.log(multiply([1,2,3,4,5,6]));
+
+//reverse string**************************************************
+function reverseString(arg){
+    return arg.split("").reduce((result,element)=>element+result,"");
+}
+// console.log(assert.equal(reverseString("beaugoss"),"ssoguaeb"));
+console.log(reverseString("beaugoss"));
+
+
+//filterArrayByLength**************************************************
+function filterArrayByLength(maxLength,array){
+    return array.filter(e=>e.length>=maxLength);
+}
+// console.log(assert.equal(filterArrayByLength(3,["beaugoss","q","as",'asb']),["beaugoss","asb"]));
+console.log(filterArrayByLength(3,["beaugoss","q","as",'asb']));
