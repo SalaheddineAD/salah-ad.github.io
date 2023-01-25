@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <title> W2D2 lab</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+
+        <script src="script.js"></script>
+        <script src="testing.js"></script>
+    </head>
+    <body>
+        <div id="mocha"></div>
+
+        <div class="container">
+            <div class="exercise1">
+                <h3>Question 1</h3>
+                <p>
+                    var module=(function(){
+                        var counter=0;
+                        return { add :function(){
+                                return counter+1;
+                                }, 
+                                reset: function(){
+                                counter=0;
+                            }
+                        }
+                    })();
+                </p>
+                <h3>Question 2</h3>
+                <p>
+                    Counter is the free variable.<br>
+                    A free variable is a variable that used inside a function but isn't declared inside it nor is it passed as a parameter.
+                </p>
+            </div>
+        </div>
+        <script>
+            mocha.run();
+        </script>
+    </body>
+</html>
