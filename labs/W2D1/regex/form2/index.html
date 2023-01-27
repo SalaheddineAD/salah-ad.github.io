@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="charset=UTF-8">
+        <title>forme 2</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+        <header></header>
+        <div class="container">
+            <h2>New product Form</h2>
+            <form action="addProduct" method="get">
+                <label id="label_productNumber">Product Number<input type="text"  id="input_productNumber"></label>
+                <span class="span_productNumber"></span>
+                <label id="label_name">Name<input type="text" id="input_name"></label>
+                <span class="span_name"></span>
+                <label id="label_unitPrice">Unit Price<input placeholder="0.0" type="text" id="input_unitPrice"></label>
+                <span class="span_unitPrice"></span>
+                <label id="label_quantityInStock">Quantity in stock<input type="text" placeholder="0"id="input_quantityInStock"></label>
+                <span class="span_quantityInStock"></span>
+                <label id="label_supplier">Supplier
+                    <select>
+                        <option>supplier1</option>
+                        <option>supplier2</option>
+                        <option>supplier3</option>
+                    </select>
+                </label>
+                <span class="span_supplier"></span>
+                <label id="label_dateSupplied">Date supplied<input type="text" id="input_supplier" placeholder="yyyy-mm-dd"></label>
+                
+                <span class="dateSupplied"></span>
+                <div class="buttons">
+                    <button id="button_reset">Reset</button>
+                    <button id="button_cancel">Cancel</button>
+                    <button id="button_addProduct">Add Product</button>
+                </div>
+            </form>
+            
+        </div>
+
+    </body>
+</html>
