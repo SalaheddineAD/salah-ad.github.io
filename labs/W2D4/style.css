@@ -10,3 +10,89 @@
 #content:hover{
     
 }
+#header{
+    background-color: blue;
+    font-size: 18px;
+    text-align:center;
+    height: 100px;
+    vertical-align: center;
+}
+#nav{
+    background-color:black;
+    color: white;
+    align-content: center;
+    display: flex;
+    padding-left:30%;
+    padding-right:30%;
+
+}
+.content{
+    background-color: white;
+    color:black;
+    /* display:flex; */
+    display:grid;
+    grid-template-areas: "col1  col2" ;
+    
+    /* flex-direction: row; */
+    /* text-align: center; */
+    /* vertical-align: center; */
+    
+}
+.column1{
+    grid-area: col1;
+    /* width:50%; */
+    background-color: beige;
+    /* height:400px; */
+    height:auto;
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+
+}
+.column2{
+    grid-area: col2;
+    /* width:50 %; */
+    width: 50%;
+    background-color:palegoldenrod;
+    /* height:400px; */
+    display: flex;
+    flex-direction:column;
+}
+.column3{
+    grid-area: col3;
+    /* width:50%; */
+    background-color: darkcyan;
+    /* height:400px; */
+    width: 100%;
+
+}
+.footer{
+    background-color:black;
+    color:white;
+    height: 900px;
+    font-size:24px;
+    text-align: center;
+    vertical-align: middle;
+}
+button{
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    /* margin-left: auto; */
+    margin:auto
+}
+label{
+    margin: 10px;
+}
+input{
+    position:absolute;
+    margin-left: 50px;
+}
+.apart{
+    width:300px;
+    height: 250px;background-color: red;
+    position:sticky;
+    
+    /* top:40px;
+    right:3px */
+}
