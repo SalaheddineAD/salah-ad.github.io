@@ -1,7 +1,9 @@
 String.prototype.filter=function(arg){
 	return this.split(" ").filter((e)=>e!=arg).join(" ");
 }
-console.log("this is not the case".filter("not"));
+let myString="this is not the case";
+
+console.log(myString.filter("not"));
 
 Array.prototype.bubbleSort=function(){
     let len=this.length;
@@ -43,9 +45,9 @@ me.learn("Inheritance");
 var Teacher =function(){}
 Teacher.prototype = new Person();
 Teacher.prototype.teach=function(subject){
-    console.log(this.name +" is now teaching "+ subject);
+    return this.name +" is now teaching "+ subject;
 
 }
 let teacher1=new Teacher();
 teacher1.initialize("salah",99);
-teacher1.teach("JavaScript");
+console.log(teacher1.teach("JavaScript"));

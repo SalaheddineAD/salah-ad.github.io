@@ -1,0 +1,56 @@
+#container{
+    width: 100%;
+    display:grid;
+    grid-template-areas: "div1 div2 div3" "div4 div5 div6";
+    display: flex;
+    flex-direction: column;
+}
+#div1{
+    grid-area: div1;
+    width:30%;
+    margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 20%;
+}
+#div2{
+    grid-area: div2;
+    width:30%;
+    margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 20%;
+}
+#div3{
+    grid-area: div3;
+    width:30%;
+    margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 20%;
+}
+#div4{
+    grid-area: div4;
+    width:30%;
+    margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 20%;
+}
+#div5{
+    grid-area: div5;
+    width:30%;
+    margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 20%;
+}
+#div6{
+    grid-area: div6;
+    width:30%;
+    margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 20%;
+}
+@media screen {
+    #content{
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+    }
+}
